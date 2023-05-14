@@ -39,7 +39,7 @@ func ReadSpreadSheet(fileName string) error {
 		for _, colCell := range row {
 			fmt.Print(colCell, "\t")
 		}
-		fmt.Println()
+		fmt.Println(row)
 	}
 
 	return err

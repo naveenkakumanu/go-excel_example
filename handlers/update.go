@@ -13,6 +13,10 @@ func UpdateSpreadSheet(filename string) error {
 		log.Println(err)
 		return err
 	}
+
+	f.SetCellValue("Sheet2", "A5", "Indira")
+	f.SetCellValue("Sheet2", "B5", 31)
+
 	f.Save()
 	return err
 }
